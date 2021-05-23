@@ -1,0 +1,32 @@
+[
+    {
+        "label": "Hopper",
+        "value": "Hopper",
+        "description": "Grace Hopper was an American computer scientist and US Navy rear admiral.",
+        "type": "type1"
+    },
+    {
+        "label": "Holberton",
+        "value": "Holberton",
+        "description": "Frances Elizabeth Holberton was one of the programmers of the first computer.",
+        "type": "type2"
+    },
+    {
+        "label": "Teitelbaum",
+        "value": "Teitelbaum",
+        "description": "Ruth Teitelbaum was one of the first computer programmers in the world.",
+        "type": "type1"
+    },
+    {
+        "label": "Antoneili",
+        "value": "Antoneili",
+        "description": "Antoneili was one of the first computer programmers in the world.",
+        "type": "type3"
+    },
+    {
+        "label": "Bartik",
+        "value": "Bartik",
+        "description": "Bartik was one of the first computer programmers in the world.",
+        "type": "type2"
+    }
+]
