@@ -16,7 +16,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## About
 
 This is a React component for selecting options (Single option as of now) built using Styled components from scratch. It can be used for making simple selection and also extended version on the component can provide additional information below each option in the dropdown.
-It can also categorize the options visually and logically based on their types. In case of no options provided, it displays a message "No data found!"
+It can also categorize the options visually and logically based on their types. In case of no options provided, it displays a message "No data found!".
+Few basic test cases are added with '@testing-library/react' and can increase the test cases when required.
 
 ## Props
 
