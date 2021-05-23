@@ -14,7 +14,7 @@ import {
     DropDownLabelSpan,
     DropDownDescription,
     HrItem,
-    NoDataFoundSpan,
+    NoDataFoundSpan
 } from './SelectComponents';
 
 const Options = ({
@@ -23,9 +23,10 @@ const Options = ({
     handleSelect,
     extended,
     isBgDark,
-    labelToDisplay
+    labelToDisplay,
+    type
 }) => {
-    const optionsInOrder = _.orderBy(options, ['type'], ['asc']);
+    const optionsInOrder = _.orderBy(options, [type], ['asc']);
     return (
         <DropDownListContainer extended={extended} length={options.length}>
             {
@@ -82,7 +83,9 @@ const Select = ({
     extended = false,
     isBgDark = false,
     labelToDisplay = "label",
-    defaultValue = "Select"
+    defaultValue = "Select",
+    onChange = () => {},
+    type = 'type'
 }) => {
     const [selectedOption, setSelectedOption] = useState(defaultValue);
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -114,6 +117,7 @@ const Select = ({
         setSelectedOption(option);
         handleToggle();
         // Write the functionality to return the selected option to the parent component
+        // onChange()
     }
 
     return (
@@ -135,6 +139,8 @@ const Select = ({
                                 isBgDark={isBgDark}
                                 labelToDisplay={labelToDisplay}
                                 defaultValue={defaultValue}
+                                onChange={onChange}
+                                type={type}
                             />
                         )
                     }
