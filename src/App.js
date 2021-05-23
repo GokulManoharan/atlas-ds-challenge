@@ -35,8 +35,9 @@ const App = () => {
         isBgDark={isBgDark} 
         extended={extended} 
         options={options}
-        defaultValue={"Select"}
+        defaultValue="Select"
         labelToDisplay="label" 
+        handleChange={() => {}}
       />
   </AppContainer>
   );
