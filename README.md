@@ -67,7 +67,7 @@ const options = [
     }
 
 export default function App() {
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [options] = useState(dropDownValues);
 
   return (
     <div className="App">
