@@ -37,7 +37,7 @@ const App = () => {
         options={options}
         defaultValue="Select"
         labelToDisplay="label" 
-        handleChange={() => {}}
+        onChange={() => {}}
       />
   </AppContainer>
   );

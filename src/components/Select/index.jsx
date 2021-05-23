@@ -20,7 +20,7 @@ import {
 const Options = ({
     options,
     selectedOption,
-    handleSelect,
+    handleOnChange,
     extended,
     isBgDark,
     labelToDisplay,
@@ -43,7 +43,7 @@ const Options = ({
                             optionsInOrder.map((option, i) => (
                                 <React.Fragment key={option[labelToDisplay] + i}>
                                     <ListItem
-                                        onClick={() => handleSelect(option)}
+                                        onClick={() => handleOnChange(option)}
                                         selected={selectedOption[labelToDisplay] === option[labelToDisplay]} extended={extended}
                                         isBgDark={isBgDark}
                                     >
@@ -113,7 +113,7 @@ const Select = ({
 
     const handleToggle = () => setToggleMenu(toggle => !toggle)
 
-    const handleSelect = option => {
+    const handleOnChange = option => {
         setSelectedOption(option);
         handleToggle();
         // Write the functionality to return the selected option to the parent component
@@ -134,7 +134,7 @@ const Select = ({
                             <Options
                                 options={options}
                                 selectedOption={selectedOption}
-                                handleSelect={handleSelect}
+                                handleOnChange={handleOnChange}
                                 extended={extended}
                                 isBgDark={isBgDark}
                                 labelToDisplay={labelToDisplay}
