@@ -25,7 +25,7 @@ It also categorizes the options visually and logically based on their types.
 | options      | Array   | List of options users can select from                | [ ]      | Optional
 | extended     | Boolean | Displays additional information about an option below it | false    | Optional
 | defaultValue | string  | Default value to display in the dropdown header            | "Select" | Optional
-| handleChange | function| subscribe to change events     | () => {} | Optional
+| onChange | function| subscribe to change events     | () => {} | Optional
 | labelToDisplay | string | default property of the option object to display | "label" | Optional
 | type | string | Property name in option object based on which the options should be separated logically | 'type' | Optional
 
