@@ -1,34 +1,84 @@
-# Design System challenge
+# Custom Select component
+## Open [this codesandbox link](https://codesandbox.io/s/github/GokulManoharan/atlas-ds-challenge) to see it in action
 
-Welcome to our exercise. During this test, you will be given the challenge to create a Select Menu component from scratch using React.
+Clone the repo and navigate to the project folder that got created
 
-If you have any questions, please contact us for clarification, we're happy to help!
+## Available Scripts
+### `npm install` 
 
-![Select Menu](select-menu.jpg)
+Isntalls the project dependencies
 
-## Instructions
+### `npm start`
 
-1. **Clone** this repo to a location of your choosing.
-2. Write your solution to the exercise, making sure you followed the specs carefully.
-3. Push your solution to a **private repo** in your **personal Github account**.
-4. When you are ready for us to take a look, add the user `adjust-frontend` as a collaborator to your repo.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Exercise
+## About
 
-Using the provided [specs](specs.png), create a reusable `Select Menu` component. For this exercise, we ask you to implement your own component and not use any ready solutions, like react-select, Material UI, etc.
+This is a React component for selecting options(Single option as of now) built using Styled components from scratch. It can be used for making simple selection and also extended version on the component can provide additiona information below each option in the dropdown.
+It also categorizes the options visually and logically based on their types.
 
-- Your component should be written in React.
-- You can choose between Javascript or Typescript.
-- You can choose how to style your component.
+## Props
 
-### Bonus
+| Name         | Type    | Description                                                | Default  | Is Mandatory? |
+|--------------|---------|------------------------------------------------------------|----------|---------------|
+| options      | Array   | List of options users can select from                | [ ]      | Optional
+| extended     | Boolean | Displays additional information about an option below it | false    | Optional
+| defaultValue | string  | Default value to display in the dropdown header            | "Select" | Optional
+| handleChange | function| subscribe to change events     | () => {} | Optional
+| labelToDisplay | string | default property of the option object to display | "label" | Optional
+| type | string | Property name in option object based on which the options should be separated logically | 'type' | Optional
 
-- You can choose how to test your component.
+## Usage
+```JSX
+import React, { useState } from 'react';
+import Select from "./components/Select";
 
-## Expected result
+const options = [
+    {
+        "label": "Hopper",
+        "value": "Hopper",
+        "description": "Grace Hopper was an American computer scientist and US Navy rear admiral.",
+        "type": "type1"
+    },
+    {
+        "label": "Holberton",
+        "value": "Holberton",
+        "description": "Frances Elizabeth Holberton was one of the programmers of the first computer.",
+        "type": "type2"
+    },
+    {
+        "label": "Teitelbaum",
+        "value": "Teitelbaum",
+        "description": "Ruth Teitelbaum was one of the first computer programmers in the world.",
+        "type": "type1"
+    },
+    {
+        "label": "Antoneili",
+        "value": "Antoneili",
+        "description": "Antoneili was one of the first computer programmers in the world.",
+        "type": "type3"
+    },
+    {
+        "label": "Bartik",
+        "value": "Bartik",
+        "description": "Bartik was one of the first computer programmers in the world.",
+        "type": "type2"
+    }
 
-We expect you to create a **reusable** component that can be easily integrated into any project.
+export default function App() {
+  const [selectedOption, setSelectedOption] = useState(null);
 
-Don't forget to add a documentation page with examples of the different use cases of your component, including instructions on how to use it and how to run your project locally.
-
-Good luck!
+  return (
+    <div className="App">
+       <Select 
+        extended={extended} 
+        options={options}
+        defaultValue="Select"
+        labelToDisplay="label"
+        handleChange={() => {}} // Pass the onChange handler here
+      />
+    </div>
+  );
+}
+```
