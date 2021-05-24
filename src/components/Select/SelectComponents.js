@@ -96,6 +96,8 @@ export const DropDownList = styled("ul")`
   font-weight: 500;
   cursor: pointer;
   user-select: none;
+  height: 300px;
+  overflow: auto;
   background: ${props => props.isBgDark ?  "#191D2F" : "#F9FAFC"};
   &:first-child {
     padding-top: 0.3rem;
