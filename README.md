@@ -53,19 +53,8 @@ const options = [
         "value": "Teitelbaum",
         "description": "Ruth Teitelbaum was one of the first computer programmers in the world.",
         "type": "type1"
-    },
-    {
-        "label": "Antoneili",
-        "value": "Antoneili",
-        "description": "Antoneili was one of the first computer programmers in the world.",
-        "type": "type3"
-    },
-    {
-        "label": "Bartik",
-        "value": "Bartik",
-        "description": "Bartik was one of the first computer programmers in the world.",
-        "type": "type2"
     }
+]
 
 export default function App() {
   const [options] = useState(dropDownValues);
