@@ -1,5 +1,5 @@
 # Custom Select component
-## Open [this codesandbox link](https://codesandbox.io/s/github/GokulManoharan/atlas-ds-challenge) to see it in action
+## Open [this codesandbox link](https://codesandbox.io/s/github/GokulManoharan/atlas-ds-challenge) for a demo
 
 Clone the repo and navigate to the project folder that got created
 
