@@ -1,9 +1,9 @@
 # Custom Select component
-### Open [this codesandbox link](https://codesandbox.io/s/github/GokulManoharan/atlas-ds-challenge) for a demo
+### Open [this codesandbox link](https://codesandbox.io/s/github/GokulManoharan/react-custom-select-component) for a demo
 
 # How to see this application running in local?
 
-Clone this repo into your local and navigate to the folder 'atlas-ds-challenge'
+Clone this repo into your local and navigate to the folder 'react-custom-select-component'
 
 ## Available Scripts
 ### `npm install` 
@@ -12,7 +12,7 @@ Installs the project dependencies
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## About
