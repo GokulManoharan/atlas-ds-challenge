@@ -3,7 +3,7 @@
 
 # How to see this application running in local?
 
-Clone this repo into yo and navigate to the folder 'atlas-ds-challenge'
+Clone this repo into your local and navigate to the folder 'atlas-ds-challenge'
 
 ## Available Scripts
 ### `npm install` 
